@@ -77,10 +77,7 @@ engineering documentation, source traceability and technical risk assessment.
 
 ## What I learned
 
-[Confirm first-person wording.] Suggested text: “I learned to connect
-system-level energy-management objectives with converter-level control design,
-and to treat reference frames, bandwidth hierarchy, network impedance and
-signal conventions as part of the same engineering problem.”
+I learned to connect system-level energy-management objectives with converter-level control design. The project strengthened my understanding of how grid-forming and grid-following inverters interact with the wider microgrid, and how reference-frame transformations, control-loop bandwidth hierarchy, network impedance, synchronization, and signal conventions influence stability and performance. It also showed me the importance of linking theoretical power-electronics concepts with practical controller implementation and simulation results.
 
 ## Suggested visuals
 
@@ -109,5 +106,4 @@ Developed an academic MATLAB/Simulink study of energy management in an
 inverter-based AC microgrid. The work connects system-level P-f/Q-V droop and
 secondary control with converter-level PWM, cascaded dq control and PLL-based
 grid following. I also curated the project into a reproducible repository with
-explicit parameter, evidence and licensing boundaries. Personal contribution:
-**[confirm specific responsibilities before posting]**.
+explicit parameter, evidence and licensing boundaries.
