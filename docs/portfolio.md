@@ -35,9 +35,7 @@ synchronization.
 
 Portfolio owner: **Md Atiq Aziz**.
 
-Personal contribution: **[confirm which Simulink subsystems, controller laws,
-parameter tuning, simulation cases, plots and report sections were completed by
-Md Atiq Aziz]**. Team report coauthor: Elisabeth von Schoenberg. Course model
+Personal contribution: Applied power-electronics expertise to analyze AC/DC converters and three-phase inverter control, including PWM, DC-link dynamics, dq-frame regulation, PLL-based grid-following operation, and voltage–frequency-regulated grid-forming operation for inverter-based microgrids. Team report coauthor: Elisabeth von Schoenberg. Course model
 templates must not be presented as solely authored work.
 
 ## Tools and methods
