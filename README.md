@@ -180,10 +180,7 @@ DENSYS 2.0 master's programme, Université de Lorraine, Microgrid Management,
 Authors: Elisabeth von Schoenberg and Md Atiq Aziz. Submitted to Dr. Serge
 Pierfederici.
 
-**Portfolio owner:** Md Atiq Aziz. **Individual contribution:** [confirm the
-specific modeling, controller implementation, simulation analysis and report
-sections completed by Md Atiq Aziz]. The repository does not imply sole
-authorship of the team report or ownership of course-provided model templates.
+**Portfolio owner:** Md Atiq Aziz. As an electrical engineer with a strong background in power electronics, I contributed to the analysis and technical interpretation of the AC/DC converter and three-phase inverter models. My work covered converter operating principles, PWM and switching behavior, DC-link dynamics, reference-frame transformations, and closed-loop voltage and current regulation. I also examined grid-following control, including synchronization through a phase-locked loop and current-controlled power injection, and grid-forming control, where the inverter establishes voltage magnitude and frequency to support islanded or weak-grid operation. I helped relate controller structures and parameters to simulated transient and steady-state behavior and documented their relevance to practical inverter-based microgrids. The repository does not imply sole authorship of the team report or ownership of course-provided model templates.
 
 ## Citation, license and contact
 
