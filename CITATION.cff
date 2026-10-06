@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Please cite the academic project and credit the course-provided model templates where applicable."
+title: "AC Microgrid Energy Management and Three-Phase Inverter Control"
+type: software
+license: MIT
+repository-code: "https://github.com/sadat013/ac-microgrid-inverter-control"
+authors:
+  - family-names: von Schoenberg
+    given-names: Elisabeth
+  - family-names: Aziz
+    given-names: Md Atiq
+preferred-citation:
+  type: report
+  title: "Energy Management Strategy: AC/DC Converters - Lab 4, 5, 6"
+  authors:
+    - family-names: von Schoenberg
+      given-names: Elisabeth
+    - family-names: Aziz
+      given-names: Md Atiq
+  year: 2026
+  institution:
+    name: Université de Lorraine

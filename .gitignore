@@ -1,0 +1,46 @@
+# Private academic sources and audit evidence
+/_private/
+
+# Generated results
+/results/*
+!/results/README.md
+
+# MATLAB and Simulink generated files
+slprj/
+*.slxc
+*.asv
+*.autosave
+*.autosave.zip
+*.mldatx
+*.mex*
+*.tmw
+*_ert_rtw/
+*_grt_rtw/
+codegen/
+.SimulinkProject/
+
+# Local archives, reports and course references
+*.zip
+*.ppt
+*.pptx
+~$*
+
+# Editors, operating systems and temporary files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+*.log
+
+# Credentials and local environments
+.env
+.env.*
+!.env.example
+credentials*
+secrets*
+*.pem
+*.key
+*.pfx
