@@ -1,5 +1,13 @@
 # Change log
 
+## 6 October 2026 - public GitHub publication
+
+- Created `https://github.com/sadat013/ac-microgrid-inverter-control` as a
+  public repository and pushed the curated `main` branch.
+- Published 24 scoped files, including three SLX models and two parameter scripts.
+- Kept private reports, teaching instructions, audit evidence and all excluded
+  DC/DC material outside the Git history.
+
 ## 6 October 2026 - repository preparation
 
 - Created a separate Git repository candidate; the original course directory

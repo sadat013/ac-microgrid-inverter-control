@@ -191,4 +191,6 @@ Use [CITATION.cff](CITATION.cff) for project attribution. Original project code
 and repository documentation are available under the [MIT License](LICENSE),
 subject to the exclusions in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
+Published repository: [sadat013/ac-microgrid-inverter-control](https://github.com/sadat013/ac-microgrid-inverter-control)
+
 Name: Md Atiq Aziz · GitHub: [sadat013](https://github.com/sadat013) · Contact: via GitHub profile
