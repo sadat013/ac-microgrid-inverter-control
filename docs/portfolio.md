@@ -93,15 +93,21 @@ and performance. It also showed me the importance of linking theoretical
 power-electronics concepts with practical controller implementation and
 simulation results.
 
-## Suggested visuals
+## Portfolio visuals
 
-1. A clean block diagram showing droop control, the two DG feeders and PCC loads.
-2. A grid-forming versus grid-following control comparison.
-3. A dq current/voltage tracking plot generated from a documented future run.
-4. A parameter table showing controller bandwidth hierarchy.
+1. [Droop-controlled two-DG microgrid](../figures/microgrid-droop-architecture.svg) -
+   original redraw showing the unequal feeders and PCC load types.
+2. [Grid-forming versus grid-following](../figures/grid-forming-vs-grid-following.svg) -
+   original control and system-role comparison.
+3. [Grid-forming dq tracking](../figures/grid-forming-dq-tracking-report.png) and
+   [grid-following dq tracking](../figures/grid-following-dq-tracking-report.png) -
+   team-report figures that were not independently rerun.
+4. [Controller bandwidth hierarchy](../figures/controller-bandwidth-hierarchy.svg) -
+   original log-frequency diagram based on the Lab 6 parameter file.
 
-Do not publish screenshots copied from the report until figure rights are
-confirmed. Prefer newly exported model diagrams and reproducible plots.
+The report-sourced tracking figures require team-report attribution and remain
+outside the repository's MIT license. A fresh, documented simulation export
+would provide stronger reproducibility evidence in a future revision.
 
 ## Suggested GitHub topics
 

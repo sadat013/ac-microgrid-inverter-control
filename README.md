@@ -56,6 +56,52 @@ voltage and frequency.
 See the [technical summary](docs/technical-summary.md) for equations, control
 boundaries, units and evidence labels.
 
+## Visual overview
+
+### Droop-controlled microgrid architecture
+
+![Two distributed generators with local droop controllers, unequal feeders and PCC loads](figures/microgrid-droop-architecture.svg)
+
+This original redraw shows the Lab 4-5 system boundary: two inverter-interfaced
+DGs use local P-f and Q-V control, connect through unequal feeder impedances and
+supply resistive, current and constant-power loads at a common PCC. The topology
+is based on the course handout; its original artwork is not reproduced.
+
+### Grid-forming and grid-following control
+
+![Grid-forming versus grid-following inverter control](figures/grid-forming-vs-grid-following.svg)
+
+Grid-forming control establishes voltage and frequency through an internal
+reference, outer voltage loop and inner current loop. Grid-following control uses
+a PLL to align with an energized grid, derives current references from P/Q
+commands and behaves as a controlled current source.
+
+### Report-sourced dq tracking
+
+**Grid-forming:**
+
+![Report-sourced grid-forming dq current and voltage tracking](figures/grid-forming-dq-tracking-report.png)
+
+**Grid-following:**
+
+![Report-sourced grid-following dq current and voltage tracking](figures/grid-following-dq-tracking-report.png)
+
+These are the original high-resolution images used as Figures 13 and 15 in the
+team report. They are included as **report-sourced simulation observations** and
+were not independently regenerated during repository preparation. They are not
+experimental measurements or covered by the repository's MIT license.
+
+### Controller bandwidth hierarchy
+
+![Controller bandwidth hierarchy from PLL to PWM switching](figures/controller-bandwidth-hierarchy.svg)
+
+The current-loop natural frequency is ten times the voltage-loop value. The
+figure also preserves the unresolved `Fref = 50 Hz` versus
+`wrated = 2*pi*60 rad/s` parameter inconsistency instead of presenting a single
+nominal grid frequency as verified.
+
+See the [figure guide](figures/README.md) for provenance, values and reuse notes.
+
 ## Repository structure
 
 ```text
@@ -65,6 +111,7 @@ models/
 src/matlab/           Read-only project manifest helper
 tests/                Non-simulation file-layout check
 docs/                 Audit, workflow, issues, verification and portfolio text
+figures/              Original diagrams and qualified report-sourced plots
 report/               Report publication note; source report held locally
 results/              Placeholder for generated outputs; contents ignored
 ```

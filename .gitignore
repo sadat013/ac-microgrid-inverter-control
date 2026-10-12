@@ -26,6 +26,7 @@ codegen/
 ~$*
 
 # Editors, operating systems and temporary files
+/tmp/
 .idea/
 .vscode/
 .DS_Store

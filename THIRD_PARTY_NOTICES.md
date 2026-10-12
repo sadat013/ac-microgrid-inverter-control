@@ -22,10 +22,23 @@ Those products and block libraries remain subject to MathWorks terms.
 ## Report and teaching material
 
 The final report credits Elisabeth von Schoenberg and Md Atiq Aziz and names
-Dr. Serge Pierfederici as the instructor. The original report, instructions,
+Dr. Serge Pierfederici as the instructor. The full original report, instructions,
 lecture material, university logos and unrelated student reference reports are
 not included in the public Git candidate. Local reference copies are retained
 under `_private/`, which is ignored by Git.
+
+## Portfolio figures
+
+The SVG diagrams in `figures/` were newly drawn for this repository from the
+documented system topology, controller descriptions and parameter evidence. No
+course-handout page or university branding is reproduced in those diagrams.
+
+`grid-forming-dq-tracking-report.png` and
+`grid-following-dq-tracking-report.png` are high-resolution images extracted
+from the project team's Word report and correspond to report Figures 13 and 15.
+They are included with team-report attribution as report-sourced simulation
+observations. They were not independently regenerated during repository
+preparation and are excluded from the repository's MIT license.
 
 ## Scope boundary
 

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="780" viewBox="0 0 1400 780" role="img" aria-labelledby="title desc">
+  <title id="title">Controller bandwidth hierarchy</title>
+  <desc id="desc">Logarithmic frequency diagram showing PLL at 0.159 hertz, outer voltage loop at 191 hertz, inner current loop at 1.91 kilohertz, and PWM switching at 20 kilohertz.</desc>
+  <defs>
+    <style>
+      .title{font:700 32px Arial,sans-serif;fill:#0f172a}.sub{font:16px Arial,sans-serif;fill:#475569}
+      .h{font:700 19px Arial,sans-serif;fill:#0f172a}.t{font:16px Arial,sans-serif;fill:#334155}.small{font:14px Arial,sans-serif;fill:#475569}
+      .axis{stroke:#334155;stroke-width:3}.grid{stroke:#cbd5e1;stroke-width:1.5;stroke-dasharray:5 5}.stem{stroke:#64748b;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="1400" height="780" fill="#f8fafc"/>
+  <text x="70" y="58" class="title">Controller bandwidth hierarchy</text>
+  <text x="70" y="88" class="sub">Lab 6 parameter evidence positioned on a logarithmic axis; angular frequencies converted using f = omega / (2 pi)</text>
+
+  <line x1="150" y1="410" x2="1250" y2="410" class="axis"/>
+  <g class="small" text-anchor="middle">
+    <line x1="150" y1="390" x2="150" y2="430" class="axis"/><text x="150" y="452">0.1</text>
+    <line x1="358" y1="390" x2="358" y2="430" class="axis"/><text x="358" y="452">1</text>
+    <line x1="565" y1="390" x2="565" y2="430" class="axis"/><text x="565" y="452">10</text>
+    <line x1="773" y1="390" x2="773" y2="430" class="axis"/><text x="773" y="452">100</text>
+    <line x1="980" y1="390" x2="980" y2="430" class="axis"/><text x="980" y="452">1k</text>
+    <line x1="1188" y1="390" x2="1188" y2="430" class="axis"/><text x="1188" y="452">10k</text>
+    <line x1="1250" y1="390" x2="1250" y2="430" class="axis"/><text x="1250" y="452">20k</text>
+  </g>
+  <g opacity="0.8">
+    <line x1="150" y1="150" x2="150" y2="565" class="grid"/><line x1="358" y1="150" x2="358" y2="565" class="grid"/>
+    <line x1="565" y1="150" x2="565" y2="565" class="grid"/><line x1="773" y1="150" x2="773" y2="565" class="grid"/>
+    <line x1="980" y1="150" x2="980" y2="565" class="grid"/><line x1="1188" y1="150" x2="1188" y2="565" class="grid"/>
+  </g>
+
+  <line x1="192" y1="310" x2="192" y2="410" class="stem"/><circle cx="192" cy="410" r="11" fill="#0ea5e9"/>
+  <rect x="65" y="190" width="260" height="120" rx="14" fill="#ecfeff" stroke="#0ea5e9" stroke-width="3"/>
+  <text x="90" y="225" class="h">PLL</text><text x="90" y="255" class="t">wcpll = 1 rad/s</text><text x="90" y="284" class="t">0.159 Hz</text>
+
+  <line x1="831" y1="410" x2="831" y2="520" class="stem"/><circle cx="831" cy="410" r="11" fill="#22c55e"/>
+  <rect x="675" y="520" width="315" height="120" rx="14" fill="#f0fdf4" stroke="#22c55e" stroke-width="3"/>
+  <text x="700" y="555" class="h">Outer voltage loop</text><text x="700" y="585" class="t">WnVdq = 1,200 rad/s</text><text x="700" y="614" class="t">approximately 191 Hz</text>
+
+  <line x1="1038" y1="300" x2="1038" y2="410" class="stem"/><circle cx="1038" cy="410" r="11" fill="#7c3aed"/>
+  <rect x="875" y="175" width="325" height="125" rx="14" fill="#f5f3ff" stroke="#7c3aed" stroke-width="3"/>
+  <text x="900" y="210" class="h">Inner current loop</text><text x="900" y="240" class="t">WnIdq = 12,000 rad/s</text><text x="900" y="270" class="t">approximately 1.91 kHz</text>
+
+  <line x1="1250" y1="410" x2="1250" y2="520" class="stem"/><circle cx="1250" cy="410" r="11" fill="#f97316"/>
+  <rect x="1070" y="520" width="270" height="120" rx="14" fill="#fff7ed" stroke="#f97316" stroke-width="3"/>
+  <text x="1095" y="555" class="h">PWM switching</text><text x="1095" y="585" class="t">Fs = 20,000 Hz</text><text x="1095" y="614" class="t">20 kHz</text>
+
+  <path d="M 360 115 H 1260" fill="none" stroke="#2563eb" stroke-width="5"/>
+  <path d="M 1260 115 l-18 -10 v20 z" fill="#2563eb"/>
+  <text x="510" y="103" class="h">Increasing control speed and switching frequency</text>
+  <rect x="325" y="665" width="750" height="44" rx="12" fill="#dbeafe" stroke="#93c5fd"/>
+  <text x="405" y="693" class="h">PLL &lt; outer voltage loop &lt; inner current loop &lt; PWM</text>
+  <text x="420" y="737" class="t">The current-loop natural frequency is 10 times the voltage-loop value.</text>
+  <rect x="65" y="665" width="235" height="86" rx="12" fill="#fffbeb" stroke="#f59e0b" stroke-width="2"/>
+  <text x="85" y="695" class="h">Parameter warning</text><text x="85" y="721" class="small">Fref = 50 Hz, while</text><text x="85" y="742" class="small">wrated = 2 pi 60 rad/s.</text>
+</svg>

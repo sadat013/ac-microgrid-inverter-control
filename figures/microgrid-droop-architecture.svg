@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+  <title id="title">Two-DG AC microgrid with droop control and PCC loads</title>
+  <desc id="desc">Original schematic showing two inverter-interfaced distributed generators with local droop controllers, unequal feeder impedances, a common point of coupling, and resistive, current, and constant-power loads.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/>
+    </marker>
+    <style>
+      .title{font:700 32px Arial,sans-serif;fill:#0f172a}.sub{font:16px Arial,sans-serif;fill:#475569}
+      .h{font:700 20px Arial,sans-serif;fill:#0f172a}.t{font:16px Arial,sans-serif;fill:#334155}
+      .small{font:14px Arial,sans-serif;fill:#475569}.card{fill:#fff;stroke:#cbd5e1;stroke-width:2}
+      .block{fill:#eff6ff;stroke:#2563eb;stroke-width:2}.control{fill:#ecfeff;stroke:#0891b2;stroke-width:2}
+      .load{fill:#fff7ed;stroke:#ea580c;stroke-width:2}.wire{fill:none;stroke:#0f172a;stroke-width:4}
+      .signal{fill:none;stroke:#2563eb;stroke-width:2.5;marker-end:url(#arrow)}
+      .feedback{fill:none;stroke:#0891b2;stroke-width:2.5;stroke-dasharray:8 6;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1400" height="760" fill="#f8fafc"/>
+  <text x="70" y="58" class="title">Droop-controlled two-DG AC microgrid</text>
+  <text x="70" y="88" class="sub">New schematic based on the Lab 4-6 topology; not a reproduction of the course-handout artwork</text>
+
+  <line x1="125" y1="160" x2="1275" y2="160" class="wire"/>
+  <circle cx="360" cy="160" r="7" fill="#0f172a"/><circle cx="775" cy="160" r="7" fill="#0f172a"/><circle cx="1015" cy="160" r="7" fill="#0f172a"/>
+  <text x="1125" y="145" class="h">Common PCC bus</text>
+  <text x="1125" y="178" class="small">V<tspan baseline-shift="sub">PCC</tspan>, f<tspan baseline-shift="sub">PCC</tspan></text>
+
+  <rect x="70" y="305" width="470" height="385" rx="18" class="card"/>
+  <text x="95" y="342" class="h">Distributed generator 1</text>
+  <rect x="105" y="525" width="105" height="72" rx="10" class="block"/><text x="127" y="555" class="t">DC source</text><text x="129" y="579" class="small">DC link</text>
+  <rect x="245" y="512" width="110" height="98" rx="10" class="block"/><text x="278" y="552" class="h">VSI</text><text x="266" y="580" class="small">PWM</text>
+  <rect x="395" y="525" width="105" height="72" rx="10" class="block"/><text x="430" y="555" class="t">LC</text><text x="420" y="579" class="small">filter</text>
+  <line x1="210" y1="561" x2="245" y2="561" class="wire"/><line x1="355" y1="561" x2="395" y2="561" class="wire"/>
+  <rect x="135" y="382" width="325" height="92" rx="12" class="control"/>
+  <text x="160" y="414" class="h">Local droop controller</text>
+  <text x="160" y="445" class="t">P-f and Q-V / Q-V<tspan baseline-shift="sub">est</tspan></text>
+  <path d="M 298 474 L 298 512" class="signal"/>
+  <path d="M 500 561 L 500 255 L 360 255 L 360 160" class="wire"/>
+  <rect x="283" y="215" width="154" height="58" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="307" y="240" class="t">Feeder Z<tspan baseline-shift="sub">1</tspan></text><text x="306" y="261" class="small">R<tspan baseline-shift="sub">1</tspan>, L<tspan baseline-shift="sub">1</tspan></text>
+  <path d="M 360 180 L 360 382" class="feedback"/>
+  <text x="372" y="300" class="small">P<tspan baseline-shift="sub">1</tspan>, Q<tspan baseline-shift="sub">1</tspan>, V<tspan baseline-shift="sub">1</tspan></text>
+
+  <rect x="575" y="305" width="410" height="385" rx="18" class="card"/>
+  <text x="600" y="342" class="h">Distributed generator 2</text>
+  <rect x="610" y="525" width="100" height="72" rx="10" class="block"/><text x="620" y="555" class="t">DC source</text><text x="628" y="579" class="small">DC link</text>
+  <rect x="742" y="512" width="105" height="98" rx="10" class="block"/><text x="772" y="552" class="h">VSI</text><text x="758" y="580" class="small">PWM</text>
+  <rect x="875" y="525" width="80" height="72" rx="10" class="block"/><text x="900" y="555" class="t">LC</text><text x="888" y="579" class="small">filter</text>
+  <line x1="710" y1="561" x2="742" y2="561" class="wire"/><line x1="847" y1="561" x2="875" y2="561" class="wire"/>
+  <rect x="625" y="382" width="300" height="92" rx="12" class="control"/>
+  <text x="650" y="414" class="h">Local droop controller</text>
+  <text x="650" y="445" class="t">P-f and Q-V / Q-V<tspan baseline-shift="sub">est</tspan></text>
+  <path d="M 775 474 L 795 512" class="signal"/>
+  <path d="M 955 561 L 955 255 L 775 255 L 775 160" class="wire"/>
+  <rect x="698" y="215" width="154" height="58" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="722" y="240" class="t">Feeder Z<tspan baseline-shift="sub">2</tspan></text><text x="721" y="261" class="small">R<tspan baseline-shift="sub">2</tspan>, L<tspan baseline-shift="sub">2</tspan></text>
+  <path d="M 775 180 L 775 382" class="feedback"/>
+  <text x="787" y="300" class="small">P<tspan baseline-shift="sub">2</tspan>, Q<tspan baseline-shift="sub">2</tspan>, V<tspan baseline-shift="sub">2</tspan></text>
+
+  <rect x="1020" y="225" width="315" height="465" rx="18" class="card"/>
+  <text x="1048" y="264" class="h">PCC load bank</text>
+  <path d="M 1178 160 L 1178 225" class="wire"/>
+  <rect x="1055" y="300" width="245" height="80" rx="12" class="load"/>
+  <path d="M 1090 340 l18 -22 l18 44 l18 -44 l18 44 l18 -22" fill="none" stroke="#ea580c" stroke-width="3"/>
+  <text x="1210" y="347" class="t">Resistive</text>
+  <rect x="1055" y="405" width="245" height="80" rx="12" class="load"/>
+  <circle cx="1120" cy="445" r="23" fill="none" stroke="#ea580c" stroke-width="3"/><path d="M 1120 462 L1120 428" class="signal"/>
+  <text x="1210" y="452" class="t">Current</text>
+  <rect x="1055" y="510" width="245" height="95" rx="12" class="load"/>
+  <text x="1082" y="550" class="h">P + jQ</text><text x="1082" y="578" class="small">regulated demand</text>
+  <text x="1210" y="558" class="t">Constant</text><text x="1210" y="581" class="t">power</text>
+
+  <rect x="103" y="706" width="840" height="34" rx="10" fill="#fff7ed" stroke="#fdba74"/>
+  <text x="123" y="729" class="small">Unequal feeder impedances Z1 and Z2 motivate improved reactive-power sharing and PCC-voltage estimation.</text>
+</svg>
