@@ -35,8 +35,15 @@ synchronization.
 
 Portfolio owner: **Md Atiq Aziz**.
 
-Personal contribution: Applied power-electronics expertise to analyze AC/DC converters and three-phase inverter control, including PWM, DC-link dynamics, dq-frame regulation, PLL-based grid-following operation, and voltage–frequency-regulated grid-forming operation for inverter-based microgrids. Team report coauthor: Elisabeth von Schoenberg. Course model
-templates must not be presented as solely authored work.
+My contribution centered on the engineering analysis and technical documentation
+of the AC/DC converter and three-phase inverter models. Drawing on my electrical
+engineering and power-electronics background, I analyzed PWM switching and the
+DC link, synchronous dq transformations, cascaded voltage and current control,
+PLL-based grid-following operation, and grid-forming voltage and frequency
+control. I also interpreted transient and steady-state simulation behavior and
+connected converter-level operation to the wider microgrid control objectives.
+Team report coauthor: Elisabeth von Schoenberg. Course model templates must not
+be presented as solely authored work.
 
 ## Tools and methods
 
@@ -77,7 +84,14 @@ engineering documentation, source traceability and technical risk assessment.
 
 ## What I learned
 
-I learned to connect system-level energy-management objectives with converter-level control design. The project strengthened my understanding of how grid-forming and grid-following inverters interact with the wider microgrid, and how reference-frame transformations, control-loop bandwidth hierarchy, network impedance, synchronization, and signal conventions influence stability and performance. It also showed me the importance of linking theoretical power-electronics concepts with practical controller implementation and simulation results.
+I learned to connect system-level energy-management objectives with
+converter-level control design. The project strengthened my understanding of
+how grid-forming and grid-following inverters interact with the wider microgrid,
+and how reference-frame transformations, control-loop bandwidth hierarchy,
+network impedance, synchronization, and signal conventions influence stability
+and performance. It also showed me the importance of linking theoretical
+power-electronics concepts with practical controller implementation and
+simulation results.
 
 ## Suggested visuals
 
@@ -106,4 +120,8 @@ Developed an academic MATLAB/Simulink study of energy management in an
 inverter-based AC microgrid. The work connects system-level P-f/Q-V droop and
 secondary control with converter-level PWM, cascaded dq control and PLL-based
 grid following. I also curated the project into a reproducible repository with
-explicit parameter, evidence and licensing boundaries.
+explicit parameter, evidence and licensing boundaries. My contribution focused
+on analyzing and documenting AC/DC converter and three-phase inverter behavior,
+including PWM, DC-link dynamics, dq-frame regulation, PLL-based grid following,
+grid-forming control, and the interpretation of transient and steady-state
+simulation results.
