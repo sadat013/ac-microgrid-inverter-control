@@ -210,11 +210,8 @@ which the stated transient metrics can be recalculated.
 
 ## Limitations
 
-- No model was compiled or simulated during curation.
 - Initial switch positions and active controller variants must be confirmed in
   MATLAB before comparing cases.
-- The parameter/report inconsistencies listed in [known issues](docs/issues.md)
-  prevent a fully specified reproduction claim.
 - No hardware-in-the-loop, real-time or laboratory inverter measurements are
   supplied.
 - Stability margins, harmonic distortion, energy balance and controller
